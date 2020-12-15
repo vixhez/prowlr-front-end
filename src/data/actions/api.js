@@ -1,13 +1,11 @@
-// import axios from '../axios';
-import animals from '../dummy-data/animals.json';
+import axios from '../axios-config';
+//import animals from '../dummy-data/animals.json';
 
-export const getAnimals = (id) => {
+export const getAnimals = () => {
     return (dispatch) => {
-        // axios.get(`/animals/${id}`).then(({ data }) => {
-        //     dispatch({ type: "STORE_ANIMAL", data: data });
-        // })
-        dispatch({ type: "STORE_ANIMALS", data: animals.data });
+        axios.get('/api/animals').then(({ data }) => {
+            dispatch({ type: "STORE_ANIMALS", data: data.data });
+        });
+        //dispatch({ type: "STORE_ANIMALS", data: animals.data });
     }
 }
-
-// api - data.data
