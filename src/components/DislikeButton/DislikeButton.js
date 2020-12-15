@@ -1,4 +1,4 @@
-const dislikeButton = () => (
+const DislikeButton = () => (
   
     <button type="button" className="btn btn-danger btn-circle btn-xl"> 
         <i className="fas fa-times-circle"></i>
@@ -6,4 +6,4 @@ const dislikeButton = () => (
     
 );
 
-export default dislikeButton;
+export default DislikeButton;

@@ -1,4 +1,4 @@
-const likeButton = () => (
+const LikeButton = () => (
   
     <div>
         <button type="button" className="btn btn-success btn-circle btn-xl"> 
@@ -8,5 +8,5 @@ const likeButton = () => (
     
 );
 
-export default likeButton;
+export default LikeButton;
 
