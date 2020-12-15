@@ -1,13 +1,13 @@
 import rhino from '../../assets/rhino.jpg';
 
-
-const Profile = () => (
+const Profile = ({name, age, bio, species}) => (
     <div className="card w-50">
-        <img className="card-img-top" src={ rhino } alt= "Card image cap"/>
+        <img className="card-img-top" src={ rhino } alt="Big Frank"/>
         <div className="card-body">
-            <h5 className="card-title">Frank</h5>
-            <p className="card-text">Beaverhino</p>
-            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <h5 className="card-title">{name}</h5>
+            <p className="card-text">{species}</p>
+            <p className="card-text">{age}</p>
+            <p className="card-text">{bio}</p>
         </div>
     </div>
 );
