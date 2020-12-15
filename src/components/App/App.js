@@ -1,7 +1,7 @@
 import { Component } from 'react';
 
 import Header from '../Header/Header';
-import LikeButton from '../LikeButton/LikeButton';
+import LikeButton from '../LikeButton';
 import DislikeButton from '../DislikeButton/DislikeButton';
 import Profile from '../Profile';
 import Leaderboard from '../Leaderboard/Leaderboard';
