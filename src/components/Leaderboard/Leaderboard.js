@@ -1,12 +1,5 @@
 const Leaderboard = () => (
     <div>
-        <section className="winners">
-            <div className="first">
-
-            </div>
-            
-        </section>
-
         <ol className="list-group">
             <li className="list-group-item">Cras justo odio</li>
             <li className="list-group-item">Dapibus ac facilisis in</li>
