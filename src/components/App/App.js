@@ -2,7 +2,7 @@ import { Component } from 'react';
 
 import Header from '../Header/Header';
 import LikeButton from '../LikeButton';
-import DislikeButton from '../DislikeButton/DislikeButton';
+import DislikeButton from '../DislikeButton';
 import Profile from '../Profile';
 
 import Leaderboard from '../Leaderboard/Leaderboard';
