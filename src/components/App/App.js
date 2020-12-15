@@ -1,9 +1,10 @@
 import { Component } from 'react';
 
-import Header from '../header/Header';
-import LikeButton from '../LikeButton/LikeButton';
-import DislikeButton from '../DislikeButton';
-import Profile from '../profile';
+import Header from '../Header/Header';
+import LikeButton from '../LikeButton';
+import DislikeButton from '../DislikeButton/DislikeButton';
+import Profile from '../Profile';
+
 import Leaderboard from '../Leaderboard/Leaderboard';
 
 // turn into a class to access didmount. 

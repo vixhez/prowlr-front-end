@@ -1,5 +1,6 @@
-export const nextProfile = () => {
+export const nextAnimal = () => {
     return {
-        type: "INCREMENT",
+        type: "INCREMENT_ANIMAL",
     }
-}
+};
+
