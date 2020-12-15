@@ -1,7 +1,7 @@
 const setAnimalState = (state, action) => ({
-  ...state,
-  animals: action.data,
-  loaded: true,
+    ...state,
+    animals: action.data,
+    loaded: true,
 });
 
 const incrementAnimal = (state) => ({
@@ -17,6 +17,6 @@ const reducer = (state, action) => {
       //case "UPDATESTATE": return updateState(state, action)
       default: return state;
     }
-  };
+};
 
-  export default reducer
+export default reducer

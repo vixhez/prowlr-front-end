@@ -4,31 +4,31 @@ import Header from '../Header/Header';
 import LikeButton from '../LikeButton';
 import DislikeButton from '../DislikeButton/DislikeButton';
 import Profile from '../Profile';
+
 import Leaderboard from '../Leaderboard/Leaderboard';
 
 // turn into a class to access didmount. 
 
-class App extends Component
-{
+class App extends Component {
 
   componentDidMount() {
     console.log(this.props);
     this.props.getAnimals();
   }
 
-  render () {
+  render() {
     return (
       <div>
-      <Header />
-  
-      <LikeButton />
-  
-      <DislikeButton />
-  
-      { this.props.loaded ? <Profile id={1} /> : null }
-  
-      <Leaderboard />
-    </div>
+        <Header />
+
+        <LikeButton />
+
+        <DislikeButton />
+
+        { this.props.loaded ? <Profile id={1} /> : null}
+
+        <Leaderboard />
+      </div>
     );
   }
 }
