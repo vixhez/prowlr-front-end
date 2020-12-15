@@ -1,9 +1,9 @@
-const DislikeButton = ({ nextProfile }) => (// pass in dispatch method
+const DislikeButton = ({ nextAnimal }) => (// pass in dispatch method
 
     <button
         type="button"
         className="btn btn-danger btn-circle btn-xl"
-        onClick={nextProfile}
+        onClick={nextAnimal}
     >
         <i className="fas fa-times-circle"></i>
     </button>
