@@ -12,7 +12,6 @@ import Leaderboard from '../Leaderboard/Leaderboard';
 class App extends Component {
 
   componentDidMount() {
-    console.log(this.props);
     this.props.getAnimals();
   }
 
@@ -25,7 +24,7 @@ class App extends Component {
 
         <DislikeButton />
 
-        { this.props.loaded ? <Profile id={1} /> : null}
+        { this.props.loaded ? <Profile /> : null}
 
         <Leaderboard />
       </div>
