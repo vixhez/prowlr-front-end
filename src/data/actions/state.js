@@ -4,3 +4,8 @@ export const nextAnimal = () => {
     }
 };
 
+export const accessLeaderboard = () => {
+    return {
+        type: "ACCESS_LEADERBOARD",
+    }
+};
