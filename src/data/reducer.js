@@ -1,3 +1,5 @@
+import initial from './initial';
+
 // Setting animals to state
 const setAnimalState = (state, action) => ({
   ...state,
@@ -35,6 +37,12 @@ const reducer = (state, action) => {
     case "INCREMENT_ANIMAL": return finishedProfiles(incrementAnimal(state));
 
     case "ACCESS_LEADERBOARD": return leaderboardReducer(state);
+
+    case "RESET_APP": return {
+      ...state,
+      finished: false,
+      currentAnimal: 0,
+    }
 
       //case "UPDATESTATE": return updateState(state, action)
       default: return state;

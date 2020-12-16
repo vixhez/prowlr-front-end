@@ -7,6 +7,7 @@ import Profile from '../Profile';
 
 import Leaderboard from '../Leaderboard/Leaderboard';
 import LeaderboardButton from '../LeaderboardButton';
+import ResetButton from '../ResetButton';
 
 // turn into a class to access didmount. 
 
@@ -36,7 +37,9 @@ class App extends Component {
       <div>
         <Header />
         
-        <Leaderboard /> 
+        <Leaderboard />
+
+        <ResetButton />
       </div>
     );
   }
