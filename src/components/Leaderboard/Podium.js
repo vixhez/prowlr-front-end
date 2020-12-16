@@ -1,29 +1,31 @@
 import React from "react";
 
 const Podium = ({ top3 }) => {
+    const winner = top3[0];
+    const secondPlace = top3[1];
+    const thirdPlace = top3[2];
 
     return (
-        <table className="table mt-5">
-            <thead>
+        <div class="podium">
+            <table id="ladder">
                 <tr>
-                    <th scope="col">Position</th>
-                    <th scope="col">Name</th>
-                    <th scope="col">Image</th>
-                    <th scope="col">Liked</th>
+                    <td>{winner.image_url}</td>
+                    <td>{secondPlace.image_url}</td>
+                    <td>{thirdPlace.image_url}</td>
                 </tr>
-            </thead>
-            <tbody>
-                {top3.map((animal, index) => (
-                    <tr key={index}>
-                        <th scope="row">{index + 1}</th>
-                        <td>{animal.name}</td>
-                        <td>{animal.image_url}</td>
-                        <td>{animal.percentageOfLikes}</td>
-                    </tr>
-                )
-                )}
-            </tbody>
-        </table>
+                <tr>
+                    <td>{winner.name}</td>
+                    <td>{secondPlace.name}</td>
+                    <td>{thirdPlace.name}</td>
+                </tr>
+
+                <tr>
+                    <td><div id="podium1"></div></td>
+                    <td><div id="podium0"></div></td>
+                    <td><div id="podium2"></div></td>
+                </tr>
+            </table>
+        </div>
     )
 
 }
