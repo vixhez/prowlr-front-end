@@ -23,13 +23,19 @@ const finishedProfiles = (state) => {
     return state; 
 }
 
-// this is working in terms of changing state of finished to true, but is then throwing an error instead of showing leaderboard
+const leaderboardReducer = (state) => ({
+    ...state,
+    finished: true,
+})
 
 const reducer = (state, action) => {
   switch (action.type) {
     case "STORE_ANIMALS": return setAnimalState(state, action);
 
     case "INCREMENT_ANIMAL": return finishedProfiles(incrementAnimal(state));
+
+    case "ACCESS_LEADERBOARD": return leaderboardReducer(state);
+
       //case "UPDATESTATE": return updateState(state, action)
       default: return state;
     }
