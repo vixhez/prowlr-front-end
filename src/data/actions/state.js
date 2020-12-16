@@ -9,3 +9,9 @@ export const accessLeaderboard = () => {
         type: "ACCESS_LEADERBOARD",
     }
 };
+
+export const resetApp = () => {
+    return {
+        type: "RESET_APP",
+    }
+};
