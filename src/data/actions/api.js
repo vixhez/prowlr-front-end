@@ -1,4 +1,5 @@
 import axios from '../axios-config';
+import {nextAnimal} from './state';
 //import animals from '../dummy-data/animals.json';
 
 export const getAnimals = () => {
@@ -10,13 +11,14 @@ export const getAnimals = () => {
     }
 }
 
-export const patchGame = animal => {
+export const patchGame = liked => {
     return (dispatch, getState) => {
-        let id = getState().id;
+        let {currentAnimal, animals} = getState();
+        let id =  animals[currentAnimal].id
         axios.patch(`animals/${id}/likes`, {
-            animal: animal
+            liked: liked
         }).then(({ data }) => {
-            dispatch({ type: "UPDATE", data: data.data });
+            dispatch(nextAnimal());
         });
     }
 }
