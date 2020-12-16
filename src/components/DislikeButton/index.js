@@ -5,6 +5,10 @@ import { nextAnimal } from '../../data/actions/state';
 // Import wrapped file 
 import DislikeButton from './DislikeButton';
 
+const mapStateToProps = ({ currentAnimal }) => ({
+    currentAnimal,
+});
+
 // Map dispatch method to prop
 const mapDispatchToProps = dispatch => {
     return {
@@ -12,4 +16,4 @@ const mapDispatchToProps = dispatch => {
     }
 }
 
-export default connect(null, mapDispatchToProps)(DislikeButton);
+export default connect(mapStateToProps, mapDispatchToProps)(DislikeButton);

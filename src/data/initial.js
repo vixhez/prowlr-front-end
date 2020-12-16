@@ -2,6 +2,7 @@ const initial = {
     currentAnimal: 0,
     animals: [],
     loaded: false,
+    finished: false,
 }
 
 //     animals: [
