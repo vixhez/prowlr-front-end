@@ -16,7 +16,10 @@ class App extends Component {
   }
 
   render() {
-    return (
+    const { finished } = this.props;
+
+    return !finished ? (
+      
       <div>
         <Header />
 
@@ -25,8 +28,12 @@ class App extends Component {
         <DislikeButton />
 
         { this.props.loaded ? <Profile /> : null}
-
-        <Leaderboard />
+      </div>
+    ) : (
+      <div>
+        <Header />
+        
+        <Leaderboard /> 
       </div>
     );
   }

@@ -4,8 +4,9 @@ import App from './App';
 import { getAnimals } from '../../data/actions/api';
 
 
-const mapStateToProps = ({ loaded }) => ({
+const mapStateToProps = ({ loaded, finished }) => ({
     loaded, 
+    finished
 });
 
 const mapDispatchToProps = dispatch => {
