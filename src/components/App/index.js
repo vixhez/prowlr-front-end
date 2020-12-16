@@ -5,7 +5,7 @@ import { getAnimals } from '../../data/actions/api';
 
 
 const mapStateToProps = ({ loaded, finished }) => ({
-    loaded, 
+    loaded,
     finished
 });
 

@@ -5,7 +5,7 @@ import LikeButton from '../LikeButton';
 import DislikeButton from '../DislikeButton';
 import Profile from '../Profile';
 
-import Leaderboard from '../Leaderboard/Leaderboard';
+import Leaderboard from '../Leaderboard';
 
 // turn into a class to access didmount. 
 
@@ -19,7 +19,7 @@ class App extends Component {
     const { finished } = this.props;
 
     return !finished ? (
-      
+
       <div>
         <Header />
 
@@ -30,12 +30,12 @@ class App extends Component {
         { this.props.loaded ? <Profile /> : null}
       </div>
     ) : (
-      <div>
-        <Header />
-        
-        <Leaderboard /> 
-      </div>
-    );
+        <div>
+          <Header />
+
+          <Leaderboard />
+        </div>
+      );
   }
 }
 

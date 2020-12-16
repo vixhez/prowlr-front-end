@@ -5,6 +5,10 @@ const setAnimalState = (state, action) => ({
   loaded: true,
 });
 
+const setLeaderBoard = (state, action) => ({
+  ...state,
+  animals: action.data,
+})
 
 //Increment Current Animal
 const incrementAnimal = (state) => ({
@@ -13,26 +17,27 @@ const incrementAnimal = (state) => ({
 });
 
 const finishedProfiles = (state) => {
-    if (state.currentAnimal === state.animals.length) {
+  if (state.currentAnimal === state.animals.length) {
     return {
       ...state,
       finished: true,
-      currentAnimal: 0 
+      currentAnimal: 0
     };
   }
-    return state; 
+  return state;
 }
 
 // this is working in terms of changing state of finished to true, but is then throwing an error instead of showing leaderboard
 
+
 const reducer = (state, action) => {
   switch (action.type) {
     case "STORE_ANIMALS": return setAnimalState(state, action);
-
+    case "RANKED_ANIMALS": return setLeaderBoard(state, action);
     case "INCREMENT_ANIMAL": return finishedProfiles(incrementAnimal(state));
-      //case "UPDATESTATE": return updateState(state, action)
-      default: return state;
-    }
+
+    default: return state;
+  }
 
 };
 
