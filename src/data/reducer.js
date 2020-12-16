@@ -1,8 +1,10 @@
+// Setting animals to state
 const setAnimalState = (state, action) => ({
   ...state,
   animals: action.data,
   loaded: true,
 });
+
 
 //Increment Current Animal
 const incrementAnimal = (state) => ({
