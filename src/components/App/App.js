@@ -27,7 +27,7 @@ class App extends Component {
 
         <DislikeButton />
 
-        { this.props.loaded ? <Profile id={1} /> : null}
+        { this.props.loaded ? <Profile /> : null}
       </div>
     ) : (
       <div>
