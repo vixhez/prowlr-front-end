@@ -1,14 +1,15 @@
 // Import connect React-Redux
 import { connect } from "react-redux";
+import { patchGame } from "../../data/actions/api";
 // Import state action
-import { nextAnimal } from '../../data/actions/state';
 // Import wrapped file 
 import DislikeButton from './DislikeButton';
 
 // Map dispatch method to prop
 const mapDispatchToProps = dispatch => {
     return {
-        nextAnimal: () => dispatch(nextAnimal())
+
+        patchGame: () => dispatch(patchGame(false))
     }
 }
 

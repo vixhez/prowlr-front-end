@@ -1,13 +1,16 @@
 import { connect } from 'react-redux';
 import LikeButton from './LikeButton';
-import { nextAnimal } from "../../data/actions/state";
+import { patchGame } from "../../data/actions/api";
 
-const mapStateToProps = ({ currentAnimal }) => ({
-        currentAnimal,
-});
+// const mapStateToProps = ({ currentAnimal }) => ({
+//         currentAnimal,
+// });
 
-const mapDispatchToProps = ( dispatch ) => ({
-        nextAnimal: () => dispatch(nextAnimal()),
-});
+const mapDispatchToProps = dispatch  => {
+        return {
+    
+            patchGame: () => dispatch(patchGame(true))
+        }
+    }
 
-export default connect(mapStateToProps, mapDispatchToProps)(LikeButton);
+export default connect(null, mapDispatchToProps)(LikeButton);
