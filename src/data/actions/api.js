@@ -13,13 +13,13 @@ export const getAnimals = () => {
 }
 
 // Get list of Animals with Ranking %
-export const getAnimals = () => {
-    return (dispatch) => {
-        axios.get('animals/ranking').then(({ data }) => {
-            dispatch({ type: "STORE_ANIMALS", data: data.data });
-        });
-    }
-}
+// export const getAnimals = () => {
+//     return (dispatch) => {
+//         axios.get('animals/ranking').then(({ data }) => {
+//             dispatch({ type: "STORE_ANIMALS", data: data.data });
+//         });
+//     }
+// }
 
 // Patch liked true/false to API
 export const patchGame = liked => {
