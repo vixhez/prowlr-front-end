@@ -1,0 +1,35 @@
+.header {
+	text-align: center;
+	color: var(--red);
+	position: relative;
+	padding-bottom: 4rem;
+}
+
+.header i {
+	font-size: 60px;
+	padding: 1rem;
+}
+
+.header h1 {
+	font-size: 100px;
+	line-height: 4rem;
+}
+
+.header p {
+	font-size: 20px;
+	line-height: 1;
+}
+
+@media screen and (max-width: 480px) {
+	.header i {
+		font-size: 11vw;
+	}
+
+	.header h1 {
+		font-size: 16vw;
+	}
+
+	.header p {
+		font-size: 4vw;
+	}
+}
