@@ -68,14 +68,20 @@
 	/* gold */
 	height: 250px;
 	background: #d6af36;
+	border-top-right-radius: 5%;
+	border-top-left-radius: 5%;
 }
 #podium1 {
 	/* silver */
 	height: 200px;
 	background: #d7d7d7;
+	border-top-right-radius: 5%;
+	border-top-left-radius: 5%;
 }
 #podium2 {
 	/* bronze */
 	height: 150px;
 	background: #a77044;
+	border-top-right-radius: 5%;
+	border-top-left-radius: 5%;
 }

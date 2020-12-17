@@ -30,27 +30,27 @@ class Leaderboard extends Component {
             // Insert subcomponent Podium - pass in top3 variable. 
             <>
                 <Podium top3={top3} />
-                <table className="table mt-5">
-                    <thead>
-                        <tr>
-                            <th scope="col">Position</th>
-                            <th scope="col">Name</th>
-                            <th scope="col">Image</th>
-                            <th scope="col">Liked</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {runnersUp.map((animal, index) => (
-                            <tr key={index}>
-                                <th scope="row">{index + 4}</th>
-                                <td>{animal.name}</td>
-                                <td>{animal.image_url}</td>
-                                <td>{animal.percentageOfLikes}</td>
+                <section >
+                    <div className="list">
+                    <table className="table">
+                        <thead className="table-header">
+                            <tr>
+                                {/* <th scope="col">Position</th>
+                                <th scope="col">Name</th> */}
                             </tr>
-                        )
-                        )}
-                    </tbody>
-                </table>
+                        </thead>
+                        <tbody>
+                            {runnersUp.map((animal, index) => (
+                                <tr className="table-row" key={index}>
+                                    <th scope="row">{index + 4}</th>
+                                    <td>{animal.name}</td>
+                                </tr>
+                            )
+                            )}
+                        </tbody>
+                    </table>
+                    </div>
+                </section>
             </>
         )
     }
