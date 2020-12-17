@@ -16,6 +16,12 @@ body {
 		"Helvetica Neue", sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	size: contain;
+    background-position: bottom;
+	background-image: url('./Background-app.png');
+	background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 * {
