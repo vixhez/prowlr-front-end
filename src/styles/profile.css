@@ -12,3 +12,26 @@
     display: flex;
     justify-content: center;
 }
+
+.card {
+    background-color: var(--off_white);
+}
+
+
+.card .name {
+
+}
+
+.card .species_and_age {
+    display: flex;
+    flex: row wrap;
+    justify-content: space-between;
+}
+
+.card .species {}
+
+
+.card .age {}
+
+
+.card .bio {}

@@ -2,10 +2,10 @@ const LikeButton = ({ patchGame }) => (
 
     <button
         type="button"
-        className="like btn btn-success btn-circle btn-xl"
+        className="like btn"
         onClick={patchGame}
     >
-        <i className="fas fa-bone"></i>
+        <i className="bone fas fa-bone"></i>
     </button>
 
 
@@ -13,3 +13,4 @@ const LikeButton = ({ patchGame }) => (
 
 export default LikeButton;
 
+// btn-success btn-circle btn-xl

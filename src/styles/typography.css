@@ -19,3 +19,15 @@ h1 {
 button {
     font-family: 'Ubuntu Title';
 }
+
+.card .name {
+    font-family: 'Ubuntu Title';
+    font-size: 6vw;
+    text-align: center;
+    letter-spacing: 1vw;
+}
+
+.card .species {
+    text-align: right;
+    font-style: italic;
+}
