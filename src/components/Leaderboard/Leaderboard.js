@@ -29,26 +29,26 @@ class Leaderboard extends Component {
         return (
             // Insert subcomponent Podium - pass in top3 variable. 
             <>
-                <Podium top3={top3} />
-                <section >
+                <section>
+                    <Podium top3={top3} />
                     <div className="list">
-                    <table className="table fixed_header">
-                        <thead className="table-header">
-                            <tr>
-                                {/* <th scope="col">Position</th>
+                        <table className="table fixed_header">
+                            <thead className="table-header">
+                                <tr>
+                                    {/* <th scope="col">Position</th>
                                 <th scope="col">Name</th> */}
-                            </tr>
-                        </thead>
-                        <tbody className="tbody">
-                            {runnersUp.map((animal, index) => (
-                                <tr className="table-row" key={index}>
-                                    <th scope="row">{index + 4}th</th>
-                                    <td>{animal.name}</td>
                                 </tr>
-                            )
-                            )}
-                        </tbody>
-                    </table>
+                            </thead>
+                            <tbody className="tbody">
+                                {runnersUp.map((animal, index) => (
+                                    <tr className="table-row" key={index}>
+                                        <th scope="row">{index + 4}th</th>
+                                        <td>{animal.name}</td>
+                                    </tr>
+                                )
+                                )}
+                            </tbody>
+                        </table>
                     </div>
                 </section>
             </>

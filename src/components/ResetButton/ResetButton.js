@@ -10,7 +10,6 @@ const ResetButton = ({ resetApp }) => (
         </button>
     </div>
 
-
 );
 
 export default ResetButton;
