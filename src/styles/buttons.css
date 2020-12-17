@@ -1,10 +1,22 @@
 .like {
     font-size: 4vw;
+    color: var(--offwhite);
+    background-color: var(--green);
+}
+
+button .bone {
+    color: var(--off_white);
+}
+
+
+button .circle {
+    color: var(--off_white);
 }
 
 
 .dislike {
     font-size: 5vw;
+    background-color: var(--red);
 }
 
 
