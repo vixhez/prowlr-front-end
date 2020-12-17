@@ -5,6 +5,7 @@
 @import './styles/podium.css';
 @import './styles/settings.css';
 @import './styles/typography.css';
+@import './styles/profile.css';
 
 body {
 	margin: 0;

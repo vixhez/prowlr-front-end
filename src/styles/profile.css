@@ -1,0 +1,14 @@
+.profile_section {
+
+}
+
+.main_profile {
+    display: flex;
+    flex: row wrap;
+    justify-content: center;
+}
+
+.lower_profile {
+    display: flex;
+    justify-content: center;
+}

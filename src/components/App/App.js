@@ -12,36 +12,40 @@ import ResetButton from '../ResetButton';
 
 class App extends Component {
 
-  componentDidMount() {
-    this.props.getAnimals();
-  }
+    componentDidMount() {
+        this.props.getAnimals();
+    }
 
-  render() {
-    const { finished } = this.props;
+    render() {
+        const { finished } = this.props;
 
-    return !finished ? (
+        return !finished ? (
 
-      <div>
-        <Header />
+            <div className="profile_section">
+                <Header />
 
-        <LikeButton />
+                <section className="main_profile">
+                    <DislikeButton />
 
-        <DislikeButton />
+                    {this.props.loaded ? <Profile /> : null}
 
-        { this.props.loaded ? <Profile /> : null}
+                    <LikeButton />
+                </section>
+                <section className="lower_profile">
+                    <LeaderboardButton />
+                </section>
+               
+            </div>
+        ) : (
+                <div>
+                    <Header />
 
-        <LeaderboardButton />
-      </div>
-    ) : (
-        <div>
-          <Header />
+                    <Leaderboard />
 
-          <Leaderboard />
-
-          <ResetButton />
-        </div>
-      );
-  }
+                    <ResetButton />
+                </div>
+            );
+    }
 }
 
 export default App;

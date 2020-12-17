@@ -2,7 +2,7 @@ const DislikeButton = ({ patchGame }) => (// pass in dispatch method
 
     <button
         type="button"
-        className="btn btn-danger btn-circle btn-xl"
+        className="dislike btn btn-danger btn-circle btn-xl"
         onClick={ patchGame }>
   
         <i className="fas fa-times-circle"></i>
