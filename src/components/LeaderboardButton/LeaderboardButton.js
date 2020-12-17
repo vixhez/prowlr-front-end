@@ -2,10 +2,10 @@ const LeaderboardButton = ({ accessLeaderboard }) => (
 
     <button
         type="button"
-        className="leaderboard btn btn-success btn-circle btn-xl"
-        onClick={ accessLeaderboard }
+        className="leaderboard btn"
+        onClick={accessLeaderboard}
     >
-        All swiped out?
+        See Top Picks
     </button>
 
 

@@ -2,7 +2,6 @@
 	text-align: center;
 	color: var(--red);
 	position: relative;
-	padding-bottom: 4rem;
 }
 
 .header i {
@@ -18,6 +17,7 @@
 .header p {
 	font-size: 20px;
 	line-height: 1;
+	font-weight: bold;
 }
 
 @media screen and (max-width: 480px) {
