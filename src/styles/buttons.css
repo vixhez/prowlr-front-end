@@ -1,0 +1,17 @@
+.like {
+    font-size: 4vw;
+}
+
+
+.dislike {
+    font-size: 5vw;
+}
+
+
+.reset {}
+
+
+.leaderboard {
+    justify-content: center;
+    margin-top: 2vw;
+}

@@ -1,10 +1,13 @@
-@import "./styles/buttons.css";
-@import "./styles/header.css";
-@import "./styles/imagery.css";
-@import "./styles/leaderboard.css";
-@import "./styles/podium.css";
-@import "./styles/settings.css";
-@import "./styles/typography.css";
+
+@import './styles/buttons.css';
+@import './styles/header.css';
+@import './styles/imagery.css';
+@import './styles/leaderboard.css';
+@import './styles/podium.css';
+@import './styles/settings.css';
+@import './styles/typography.css';
+@import './styles/profile.css';
+
 
 body {
 	margin: 0;
