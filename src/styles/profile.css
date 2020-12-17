@@ -1,5 +1,7 @@
 .profile_section {
-
+    width: 500px;
+	margin: 0px auto;
+	line-height: 1.4;
 }
 
 .main_profile {
