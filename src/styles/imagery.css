@@ -1,0 +1,5 @@
+.fullpage {
+    size: contain;
+    background-position: bottom;
+    background-image: url('../Background-app.png');
+}
