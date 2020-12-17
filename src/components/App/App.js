@@ -19,28 +19,35 @@ class App extends Component {
   render() {
     const { finished } = this.props;
 
-    return !finished ? (
-
-      <div>
-        <Header />
-
-        <LikeButton />
-
-        <DislikeButton />
-
-        { this.props.loaded ? <Profile /> : null}
-
-        <LeaderboardButton />
-      </div>
-    ) : (
-        <div>
+    return (
+      <>
+        <div className='fullpage'>
           <Header />
 
-          <Leaderboard />
+          {!finished ? (
+            <>
+              <LikeButton />
 
-          <ResetButton />
+              <DislikeButton />
+
+              {this.props.loaded ? <Profile /> : null}
+
+              <LeaderboardButton />
+            </>
+          ) : (
+              <>
+                <Leaderboard />
+
+                <ResetButton />
+              </>
+            )
+          }
+          <footer className='footer'>
+
+          </footer>
         </div>
-      );
+      </>
+    )
   }
 }
 
