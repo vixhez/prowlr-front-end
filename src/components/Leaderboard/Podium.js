@@ -6,26 +6,34 @@ const Podium = ({ top3 }) => {
     const thirdPlace = top3[2];
 
     return (
-        <div class="podium">
-            <table id="ladder">
-                <tr>
-                    <td>{winner.image_url}</td>
-                    <td>{secondPlace.image_url}</td>
-                    <td>{thirdPlace.image_url}</td>
-                </tr>
-                <tr>
-                    <td>{winner.name}</td>
-                    <td>{secondPlace.name}</td>
-                    <td>{thirdPlace.name}</td>
-                </tr>
+        <section className="podium">
+            <table className="podium__ladder">
+                <tbody>
+                    <tr>
+                        <td className="podium__secondPlace__img">
+                            <img className="card-img-top" src={secondPlace.image_url} alt={`${secondPlace.name} is a ${secondPlace.species}`} />
+                        </td>
+                        <td className="podium__firstPlace__img">
+                            <img className="card-img-top" src={winner.image_url} alt={`${winner.name} is a ${winner.species}`} />
+                        </td>
+                        <td className="podium__thirdPlace__img">
+                            <img className="card-img-top" src={thirdPlace.image_url} alt={`${thirdPlace.name} is a ${thirdPlace.species}`} />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td className="podium__secondPlace">{secondPlace.name}</td>
+                        <td className="podium__firstPlace">{winner.name}</td>
+                        <td className="podium__thirdPlace">{thirdPlace.name}</td>
+                    </tr>
 
-                <tr>
-                    <td><div id="podium1"></div></td>
-                    <td><div id="podium0"></div></td>
-                    <td><div id="podium2"></div></td>
-                </tr>
+                    <tr>
+                        <td className="podium__stand"><div id="podium1"></div></td>
+                        <td className="podium__stand"><div id="podium0"></div></td>
+                        <td className="podium__stand"><div id="podium2"></div></td>
+                    </tr>
+                </tbody>
             </table>
-        </div>
+        </section>
     )
 
 }

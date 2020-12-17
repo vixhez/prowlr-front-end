@@ -21,7 +21,7 @@ class App extends Component {
 
         return !finished ? (
 
-            <div className="profile_section">
+            <div className="profile_section fullpage">
                 <Header />
 
                 <section className="main_profile">
