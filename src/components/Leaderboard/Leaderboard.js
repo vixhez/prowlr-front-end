@@ -42,7 +42,7 @@ class Leaderboard extends Component {
                         <tbody>
                             {runnersUp.map((animal, index) => (
                                 <tr className="table-row" key={index}>
-                                    <th scope="row">{index + 4}</th>
+                                    <th scope="row">{index + 4}th</th>
                                     <td>{animal.name}</td>
                                 </tr>
                             )
