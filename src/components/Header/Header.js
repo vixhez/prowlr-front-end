@@ -1,7 +1,8 @@
 const Header = () => (
-    <header className="jumbotron mt-4 mb-0">
+    <header className="header">
         <i className="fas fa-fire"></i>
         <h1>Prowlr</h1>
+        <p> find your purrrfect mate</p>
     </header>
 );
 
