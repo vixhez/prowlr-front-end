@@ -1,10 +1,10 @@
-@import './styles/buttons.css';
-@import './styles/header.css';
-@import './styles/imagery.css';
-@import './styles/leaderboard.css';
-@import './styles/podium.css';
-@import './styles/settings.css';
-@import './styles/typography.css';
+@import "./styles/buttons.css";
+@import "./styles/header.css";
+@import "./styles/imagery.css";
+@import "./styles/leaderboard.css";
+@import "./styles/podium.css";
+@import "./styles/settings.css";
+@import "./styles/typography.css";
 
 body {
 	margin: 0;
@@ -39,21 +39,3 @@ code {
 } */
 
 /* This need to be moved into the correct CSS folder */
-#podium0,
-#podium1,
-#podium2 {
-	width: 150px;
-	background: gray;
-}
-#podium0 {
-	/* gold */
-	height: 250px;
-}
-#podium1 {
-	/* silver */
-	height: 200px;
-}
-#podium2 {
-	/* bronze */
-	height: 150px;
-}
