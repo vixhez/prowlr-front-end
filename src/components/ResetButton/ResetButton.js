@@ -6,7 +6,7 @@ const ResetButton = ({ resetApp }) => (
             className="reset btn"
             onClick={resetApp}
         >
-            Keep Prowlring
+            Keep Prowling
         </button>
     </div>
 

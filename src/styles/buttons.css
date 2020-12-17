@@ -1,7 +1,3 @@
-button {
-
-}
-
 .vote {
     padding: 0x;
     display: flex;
@@ -19,31 +15,55 @@ button {
 .vote svg {
     width: 80%;
     height: 80%;
+    padding: 5px;
 }
 
 .like {
-
     background-color: var(--green);
-
+    margin-left: 20px;
+    transition: 1s;
 }
 
-button .bone {
-    color: var(--off_white);
-    padding: 5px;
-    height: 50%;
-    width: 50%;
+.like:hover {
+    -webkit-transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg);
+    transform: rotateY(360deg);
 }
 
-button .circle {
-    color: var(--off_white);
-    padding: 5px;
-    height: 50%;
-    width: 50%;
-
+.like_button {
+    display: flex;
+    align-items: center;
 }
+
 
 .dislike {
     background-color: var(--red);
+    margin-right: 20px;
+    transition: 1s;
+}
+
+.dislike:hover {
+    -webkit-transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg);
+    transform: rotateY(-360deg);
+}
+
+.dislike_button {
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 480px) {
+    .vote {
+        width: 50px;
+        height: 50px;
+    }
+    .like {
+        margin-left: 0;
+    }
+    .dislike {
+        margin-right: 0;
+    }
 }
 
 .reset {
