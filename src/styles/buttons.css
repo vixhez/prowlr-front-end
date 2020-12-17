@@ -1,29 +1,57 @@
 .like {
-    font-size: 4vw;
-    color: var(--offwhite);
-    background-color: var(--green);
+	font-size: 4vw;
+	color: var(--offwhite);
+	background-color: var(--green);
 }
 
 button .bone {
-    color: var(--off_white);
+	color: var(--off_white);
 }
-
 
 button .circle {
-    color: var(--off_white);
+	color: var(--off_white);
 }
-
 
 .dislike {
-    font-size: 5vw;
-    background-color: var(--red);
+	font-size: 5vw;
+	background-color: var(--red);
 }
 
+/* ----------Leaderboard Reset button-------------- */
+/* Had to add a wrapperto center button */
+.resetWrapper {
+	display: flex;
+	justify-content: center;
+}
 
-.reset {}
+.reset {
+	margin-top: 2vw;
+	width: 20rem;
+	height: 4rem;
+	background-color: var(--red);
+	font-size: 30px;
+	color: var(--dark_olive);
+	transition: all 0.3s ease-in-out;
+}
 
+.reset:hover {
+	transform: scale(1.1);
+	color: var(--dark_olive);
+}
 
+/* ----------Profile to Leaderboard button-------------- */
 .leaderboard {
-    justify-content: center;
-    margin-top: 2vw;
+	justify-content: center;
+	margin-top: 2vw;
+	width: 20rem;
+	height: 4rem;
+	background-color: var(--red);
+	font-size: 30px;
+	color: var(--dark_olive);
+	transition: all 0.3s ease-in-out;
+}
+
+.leaderboard:hover {
+	transform: scale(1.1);
+	color: var(--dark_olive);
 }

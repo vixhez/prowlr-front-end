@@ -18,6 +18,7 @@
 .header p {
 	font-size: 20px;
 	line-height: 1;
+	font-weight: bold;
 }
 
 @media screen and (max-width: 480px) {

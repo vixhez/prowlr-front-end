@@ -1,33 +1,33 @@
 @font-face {
-    font-family: 'Ubuntu Title';
-    src: url(fonts/Ubuntu-Title.ttf);
+	font-family: "Ubuntu Title";
+	src: url(fonts/Ubuntu-Title.ttf);
 }
 
 @font-face {
-    font-family: 'Ubuntu Regular';
-    src: url(fonts/Ubuntu-Regular.ttf);
+	font-family: "Ubuntu Regular";
+	src: url(fonts/Ubuntu-Regular.ttf);
 }
 
 * {
-    font-family: 'Ubuntu Regular';
+	font-family: "Ubuntu Regular";
 }
 
 h1 {
-    font-family: 'Ubuntu Title';
+	font-family: "Ubuntu Title";
 }
 
 button {
-    font-family: 'Ubuntu Title';
+	font-family: "Ubuntu Title";
 }
 
 .card .name {
-    font-family: 'Ubuntu Title';
-    font-size: 6vw;
-    text-align: center;
-    letter-spacing: 1vw;
+	font-family: "Ubuntu Title";
+	font-size: 6vw;
+	text-align: center;
+	letter-spacing: 1vw;
 }
 
 .card .species {
-    text-align: right;
-    font-style: italic;
+	text-align: right;
+	font-style: italic;
 }
