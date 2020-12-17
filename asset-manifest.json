@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/prowlr-front-end/static/css/main.fc08e713.chunk.css",
+    "main.js": "/prowlr-front-end/static/js/main.80db2262.chunk.js",
+    "main.js.map": "/prowlr-front-end/static/js/main.80db2262.chunk.js.map",
+    "runtime-main.js": "/prowlr-front-end/static/js/runtime-main.a30a32d9.js",
+    "runtime-main.js.map": "/prowlr-front-end/static/js/runtime-main.a30a32d9.js.map",
+    "static/js/2.025cbd4a.chunk.js": "/prowlr-front-end/static/js/2.025cbd4a.chunk.js",
+    "static/js/2.025cbd4a.chunk.js.map": "/prowlr-front-end/static/js/2.025cbd4a.chunk.js.map",
+    "static/js/3.5b2c9a1a.chunk.js": "/prowlr-front-end/static/js/3.5b2c9a1a.chunk.js",
+    "static/js/3.5b2c9a1a.chunk.js.map": "/prowlr-front-end/static/js/3.5b2c9a1a.chunk.js.map",
+    "index.html": "/prowlr-front-end/index.html",
+    "static/css/main.fc08e713.chunk.css.map": "/prowlr-front-end/static/css/main.fc08e713.chunk.css.map",
+    "static/js/2.025cbd4a.chunk.js.LICENSE.txt": "/prowlr-front-end/static/js/2.025cbd4a.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/prowlr-front-end/static/media/Ubuntu-Title.2b5febb9.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a30a32d9.js",
+    "static/js/2.025cbd4a.chunk.js",
+    "static/css/main.fc08e713.chunk.css",
+    "static/js/main.80db2262.chunk.js"
+  ]
+}
