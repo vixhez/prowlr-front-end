@@ -32,14 +32,14 @@ class Leaderboard extends Component {
                 <Podium top3={top3} />
                 <section >
                     <div className="list">
-                    <table className="table">
+                    <table className="table fixed_header">
                         <thead className="table-header">
                             <tr>
                                 {/* <th scope="col">Position</th>
                                 <th scope="col">Name</th> */}
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody className="tbody">
                             {runnersUp.map((animal, index) => (
                                 <tr className="table-row" key={index}>
                                     <th scope="row">{index + 4}th</th>
