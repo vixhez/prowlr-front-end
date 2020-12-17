@@ -1,0 +1,81 @@
+.podium {
+	max-width: 60%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.podium img {
+	border-radius: 5%;
+}
+
+.podium td {
+	width: 20%;
+}
+
+.podium__ladder {
+	position: relative;
+	margin: 0 auto;
+	border-spacing: 2rem 0;
+	border-collapse: separate;
+}
+
+.podium__stand {
+	vertical-align: bottom;
+}
+
+/* -------------- Position styling and alignment---------------- */
+
+/* First Place */
+.podium__firstPlace {
+	position: relative;
+	font-size: 40px;
+	font-weight: bold;
+}
+
+/* Second Place */
+.podium__secondPlace {
+	position: relative;
+	top: 50px;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.podium__secondPlace__img {
+	position: relative;
+	top: 50px;
+}
+
+/* Thirs Place */
+.podium__thirdPlace {
+	position: relative;
+	top: 100px;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.podium__thirdPlace__img {
+	position: relative;
+	top: 80px;
+}
+
+/* --------------Podium styling----------------- */
+/* #podium0,
+#podium1,
+#podium2 {
+	background: gray;
+} */
+#podium0 {
+	/* gold */
+	height: 250px;
+	background: #d6af36;
+}
+#podium1 {
+	/* silver */
+	height: 200px;
+	background: #d7d7d7;
+}
+#podium2 {
+	/* bronze */
+	height: 150px;
+	background: #a77044;
+}
