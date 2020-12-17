@@ -15,8 +15,6 @@
 .podium__ladder {
 	position: relative;
 	margin: 0 auto;
-	border-spacing: 2rem 0;
-	border-collapse: separate;
 }
 
 .podium__stand {
