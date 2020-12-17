@@ -1,5 +1,6 @@
 const Profile = ({ name, age, bio, species, image_url }) => {
     return (
+        <div className="profile_section">
         <div className="card">
             <img className="card-img-top" src={image_url} alt={`${name} is a ${species}`} />
             <div className="card-body">
@@ -10,6 +11,7 @@ const Profile = ({ name, age, bio, species, image_url }) => {
                 </div>
                 <p className="bio card-text">{bio}</p>
             </div>
+        </div>
         </div>
     );
 }
