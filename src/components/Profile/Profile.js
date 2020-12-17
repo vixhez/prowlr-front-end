@@ -1,6 +1,6 @@
 const Profile = ({ name, age, bio, species, image_url }) => {
     return (
-        <div className="card w-50">
+        <div className="card">
             <img className="card-img-top" src={image_url} alt={`${name} is a ${species}`} />
             <div className="card-body">
                 <h5 className="name card-title">{name}</h5>

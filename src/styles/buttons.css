@@ -1,24 +1,52 @@
-.like {
-    font-size: 4vw;
+button {
+
+}
+
+.vote {
+    padding: 0x;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+    margin: 0;
+    padding: 0;
     color: var(--offwhite);
+    border: none;
+}
+
+.vote svg {
+    width: 80%;
+    height: 80%;
+}
+
+.like {
+
     background-color: var(--green);
+
 }
 
 button .bone {
     color: var(--off_white);
+    padding: 5px;
+    height: 50%;
+    width: 50%;
 }
 
 
 button .circle {
     color: var(--off_white);
+    padding: 5px;
+    height: 50%;
+    width: 50%;
+
 }
 
 
 .dislike {
-    font-size: 5vw;
     background-color: var(--red);
 }
-
 
 .reset {}
 

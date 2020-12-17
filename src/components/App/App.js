@@ -25,11 +25,15 @@ class App extends Component {
                 <Header />
 
                 <section className="main_profile">
-                    <DislikeButton />
+                    <div className="dislike_button">
+                        <DislikeButton />
+                    </div>
 
                     {this.props.loaded ? <Profile /> : null}
 
-                    <LikeButton />
+                    <div className="like_button">
+                        <LikeButton />
+                    </div>
                 </section>
                 <section className="lower_profile">
                     <LeaderboardButton />
