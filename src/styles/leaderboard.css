@@ -1,3 +1,7 @@
+.wrapper{
+	max-height: 70vh;
+}
+
 .list {
 	max-width: 60%;
 	margin-right: auto;
@@ -9,7 +13,7 @@
 	font-weight: bold;
 	display: block;
 	overflow: scroll;
-	height: 14rem;
+	max-height: 9rem;
 	scrollbar-width: none;
 	position: relative;
 }

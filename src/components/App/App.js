@@ -41,7 +41,7 @@ class App extends Component {
                
             </div>
         ) : (
-                <div>
+                <div className="wrapper">
                     <Header />
 
                     <Leaderboard />

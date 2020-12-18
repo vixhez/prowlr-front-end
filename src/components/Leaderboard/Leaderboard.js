@@ -29,7 +29,7 @@ class Leaderboard extends Component {
         return (
             // Insert subcomponent Podium - pass in top3 variable. 
             <>
-                <section>
+                <section >
                     <Podium top3={top3} />
                     <div className="list">
                         <div class="arrow bounce">
