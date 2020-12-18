@@ -33,7 +33,7 @@ button {
     font-style: italic;
     color: teal;
     font-weight: bold;
-    font-size: 2vw;
+    font-size: 2rem
 }
 
 .card .bio {
@@ -43,7 +43,7 @@ button {
 
 .card span {
 	color:var(--red);
-	font-size: 1.5vw;
+	font-size: 1.5rem;
 	display: block;
 	font-weight: normal;
 }

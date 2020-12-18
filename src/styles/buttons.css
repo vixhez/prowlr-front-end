@@ -21,7 +21,7 @@
 .like {
     background-color: var(--green);
     margin-left: 20px;
-    transition: 1s;
+    transition: 2s;
 }
 
 .like:hover {
@@ -38,7 +38,7 @@
 .dislike {
     background-color: var(--red);
     margin-right: 20px;
-    transition: 1s;
+    transition: 2s;
 }
 
 .dislike:hover {
