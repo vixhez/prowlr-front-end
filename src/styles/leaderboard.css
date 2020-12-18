@@ -9,8 +9,9 @@
 	font-weight: bold;
 	display: block;
 	overflow: scroll;
-	height: 10rem;
+	height: 14rem;
 	scrollbar-width: none;
+	position: relative;
 }
 
 ::-webkit-scrollbar {
@@ -48,4 +49,34 @@ tr:last-child td:last-child {
 .table td,
 .table th {
 	border-top: 0px;
+}
+
+/* arrow  */
+.arrow {
+	position: absolute;
+	right: 0px;
+	font-size: 11px;
+	margin: 3% 1%;
+	color: var(--red);
+}
+.bounce {
+	-moz-animation: bounce 2s infinite;
+	-webkit-animation: bounce 2s infinite;
+	animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+	0%,
+	20%,
+	50%,
+	80%,
+	100% {
+		transform: translateY(0);
+	}
+	40% {
+		transform: translateY(-30px);
+	}
+	60% {
+		transform: translateY(-15px);
+	}
 }

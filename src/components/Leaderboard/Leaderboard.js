@@ -32,6 +32,9 @@ class Leaderboard extends Component {
                 <section>
                     <Podium top3={top3} />
                     <div className="list">
+                        <div class="arrow bounce">
+                            <i class="fa fa-arrow-down fa-2x" href="#"></i>
+                        </div>
                         <table className="table fixed_header">
                             <thead className="table-header">
                                 <tr>
