@@ -22,7 +22,8 @@ button {
 
 .card .name {
     font-family: 'Ubuntu Title';
-    font-size: 6vw;
+	/* font-size: 6vw; */
+	font-size: 3rem;
     text-align: center;
     letter-spacing: 1vw;
     color: var(--dark_blue);
@@ -32,7 +33,7 @@ button {
     font-style: italic;
     color: teal;
     font-weight: bold;
-    font-size: 3vw;
+    font-size: 2vw;
 }
 
 .card .bio {

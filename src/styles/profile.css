@@ -5,7 +5,7 @@
 } */
 
 .profile_section {
-    max-width: 700px;
+    max-width: 500px;
     min-width: 100px;
     margin: 0px auto;
     line-height: 1.4;
@@ -15,8 +15,8 @@
     max-width: 700px;
     min-width: 100px;
     height: 300px;
-    /* object-fit: contain; */
-    object-fit: cover;
+    object-fit: contain;
+    /* object-fit: cover; */
 }
 
 .main_profile {
