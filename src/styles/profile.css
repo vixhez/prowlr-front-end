@@ -1,7 +1,22 @@
-.profile_section {
+/* .profile_section {
     width: 500px;
 	margin: 0px auto;
 	line-height: 1.4;
+} */
+
+.profile_section {
+    max-width: 700px;
+    min-width: 100px;
+    margin: 0px auto;
+    line-height: 1.4;
+}
+
+.profile_section img {
+    max-width: 700px;
+    min-width: 100px;
+    height: 300px;
+    /* object-fit: contain; */
+    object-fit: cover;
 }
 
 .main_profile {
@@ -20,20 +35,16 @@
 }
 
 
-.card .name {
-
-}
-
 .card .species_and_age {
     display: flex;
     flex: row wrap;
     justify-content: space-between;
 }
 
-.card .species {}
+.card .age_section {
+    display: block;
+}
 
-
-.card .age {}
-
-
-.card .bio {}
+.card .species_section {
+    display: block;
+}
