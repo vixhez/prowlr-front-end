@@ -11,13 +11,13 @@ const Podium = ({ top3 }) => {
                 <tbody>
                     <tr>
                         <td className="podium__secondPlace__img">
-                            <img className="card-img-top" src={secondPlace.image_url} alt={`${secondPlace.name} is a ${secondPlace.species}`} />
+                            <img className="card-img-top" src={process.env.PUBLIC_URL+secondPlace.image_url} alt={`${secondPlace.name} is a ${secondPlace.species}`} />
                         </td>
                         <td className="podium__firstPlace__img">
-                            <img className="card-img-top" src={winner.image_url} alt={`${winner.name} is a ${winner.species}`} />
+                            <img className="card-img-top" src={process.env.PUBLIC_URL+winner.image_url} alt={`${winner.name} is a ${winner.species}`} />
                         </td>
                         <td className="podium__thirdPlace__img">
-                            <img className="card-img-top" src={thirdPlace.image_url} alt={`${thirdPlace.name} is a ${thirdPlace.species}`} />
+                            <img className="card-img-top" src={process.env.PUBLIC_URL+thirdPlace.image_url} alt={`${thirdPlace.name} is a ${thirdPlace.species}`} />
                         </td>
                     </tr>
                     <tr>
