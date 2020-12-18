@@ -2,8 +2,9 @@ const Profile = ({ name, age, bio, species, image_url }) => {
     return (
         <div className="profile_section">
         <div className="card">
-            <img className="card-img-top" src={image_url} alt={`${name} is a ${species}`} />
-            
+
+            <img className="card-img-top" src={process.env.PUBLIC_URL+image_url} alt={`${name} is a ${species}`} />
+
             <div className="card-body">
                 <h5 className="name card-title">{name}</h5>
                 <div className="species_and_age">
