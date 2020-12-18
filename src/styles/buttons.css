@@ -25,9 +25,8 @@
 }
 
 .like:hover {
-    -webkit-transform: rotateY(360deg);
-    -ms-transform: rotateY(360deg);
-    transform: rotateY(360deg);
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
 }
 
 .like_button {
@@ -43,9 +42,8 @@
 }
 
 .dislike:hover {
-    -webkit-transform: rotateY(360deg);
-    -ms-transform: rotateY(360deg);
-    transform: rotateY(-360deg);
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(-180deg);
 }
 
 .dislike_button {
